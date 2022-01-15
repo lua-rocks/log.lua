@@ -2,7 +2,8 @@
 
 A tiny logging module for Lua.
 
-![screenshot from 2014-07-04 19 55 55](https://cloud.githubusercontent.com/assets/3920290/3484524/2ea2a9c6-03ad-11e4-9ed5-a9744c6fd75d.png)
+![screenshot](https://user-images.githubusercontent.com/82697845/149633691-53690bae-bde5-4d15-8c77-731dec3d3066.png)
+
 
 ## Installation
 
