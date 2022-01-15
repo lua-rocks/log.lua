@@ -2,7 +2,7 @@
 
 quiet = 1
 
-new_globals = { "inspect", "dump", "devmode" }
+new_globals = { "_" }
 
 exclude_files = { "**/.*", "git/**" }
 
