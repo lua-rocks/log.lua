@@ -78,23 +78,28 @@ for i, x in ipairs(modes) do
     local msg = tostring(...)
     local info = debug.getinfo(2, "Sl")
     local lineinfo = info.short_src .. ":" .. info.currentline
+
     local usecolor = log.usecolor
+    local bold = usecolor and "\27[1m" or ""
+    local color = usecolor and x.color or ""
+    local reset = usecolor and "\27[0m" or ""
+    local underline = usecolor and "\27[4m" or ""
 
     -- Output to console
     print(
       string.format(
         "%s%s[%-6s%s]%s %s%s%s%s\n%s└──%s %s",
-        usecolor and "\27[1m" or "",
-        usecolor and x.color or "",
+        bold,
+        color,
         nameupper,
         os.date("%H:%M:%S"),
-        usecolor and "\27[0m" or "",
-        usecolor and x.color or "",
-        usecolor and "\27[4m" or "",
+        reset,
+        color,
+        underline,
         lineinfo,
-        usecolor and "\27[0m" or "",
-        usecolor and x.color or "",
-        usecolor and "\27[0m" or "",
+        reset,
+        color,
+        reset,
         msg
       )
     )
