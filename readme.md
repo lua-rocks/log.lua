@@ -57,4 +57,4 @@ The level of each log mode, starting with the lowest log level is as follows:
 ## License
 
 This library is free software; you can redistribute it and/or modify it under
-the terms of the MIT license. See [LICENSE](LICENSE) for details.
+the terms of the MIT license. See [LICENSE](license.md) for details.
