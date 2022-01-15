@@ -103,7 +103,7 @@ for i, x in ipairs(modes) do
     if log.outfile then
       local fp = io.open(log.outfile, "a")
       local str = string.format(
-        "[%-6s%s] %s: %s\n",
+        "[%-6s%s] %s\n%s\n",
         nameupper,
         os.date(),
         lineinfo,
