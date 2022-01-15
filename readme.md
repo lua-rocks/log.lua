@@ -4,7 +4,6 @@ A tiny logging module for Lua.
 
 ![screenshot](https://user-images.githubusercontent.com/82697845/149633691-53690bae-bde5-4d15-8c77-731dec3d3066.png)
 
-
 ## Installation
 
 The [log.lua](log.lua?raw=1) file should be dropped into an existing project
