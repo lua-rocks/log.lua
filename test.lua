@@ -1,3 +1,3 @@
-local log = require("log")
+local log = require("")
 
 log.debug("hellow world")
