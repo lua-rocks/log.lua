@@ -83,7 +83,7 @@ for i, x in ipairs(modes) do
     -- Output to console
     print(
       string.format(
-        "%s%s[%-6s%s]%s %s%s%s%s : %s",
+        "%s%s[%-6s%s]%s %s%s%s%s\n%s└──%s %s",
         usecolor and "\27[1m" or "",
         usecolor and x.color or "",
         nameupper,
@@ -92,6 +92,8 @@ for i, x in ipairs(modes) do
         usecolor and x.color or "",
         usecolor and "\27[4m" or "",
         lineinfo,
+        usecolor and "\27[0m" or "",
+        usecolor and x.color or "",
         usecolor and "\27[0m" or "",
         msg
       )
