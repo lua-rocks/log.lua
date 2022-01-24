@@ -7,7 +7,7 @@
 -- under the terms of the MIT license. See LICENSE for details.
 --
 
----@alias lib.log-level
+---@alias lib.any.log-level
 ---| '"trace"'
 ---| '"debug"'
 ---| '"info"'
@@ -15,18 +15,18 @@
 ---| '"error"'
 ---| '"fatal"'
 
----@alias lib.log-log fun(...)
+---@alias lib.any.log-log fun(...)
 
----@class lib.log
+---@class lib.any.log
 ---@field usecolor boolean (true)
 ---@field outfile? string (nil)
----@field level lib.log-level ("trace")
----@field trace lib.log-log
----@field debug lib.log-log
----@field info lib.log-log
----@field warn lib.log-log
----@field error lib.log-log
----@field fatal lib.log-log
+---@field level lib.any.log-level ("trace")
+---@field trace lib.any.log-log
+---@field debug lib.any.log-log
+---@field info lib.any.log-log
+---@field warn lib.any.log-log
+---@field error lib.any.log-log
+---@field fatal lib.any.log-log
 local log = { _version = "0.1.0" }
 
 log.usecolor = true
